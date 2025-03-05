@@ -1302,7 +1302,7 @@ section,
   }
 
   .departments .nav-link.active {
-    color: var(--accent-color);
+    color: white;
     background: var(--accent-color);
   }
 }
