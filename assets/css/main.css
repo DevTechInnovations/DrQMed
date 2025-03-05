@@ -606,8 +606,8 @@ h6 {
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
-  color: var(--default-color);
-  background-color: var(--background-color);
+  color: white;
+  background-color: black;
   border-top: 1px solid color-mix(in srgb, var(--accent-color), transparent 75%);
   font-size: 14px;
   position: relative;
@@ -628,7 +628,7 @@ h6 {
 }
 
 .footer .footer-about .logo span {
-  color: var(--heading-color);
+  color: white;
   font-family: var(--heading-font);
   font-size: 26px;
   font-weight: 700;
@@ -655,8 +655,8 @@ h6 {
 }
 
 .footer .social-links a:hover {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
+  color: white;
+  border-color: white;
 }
 
 .footer h4 {
@@ -664,6 +664,7 @@ h6 {
   font-weight: bold;
   position: relative;
   padding-bottom: 12px;
+  color: white;
 }
 
 .footer .footer-links {
@@ -693,13 +694,13 @@ h6 {
 }
 
 .footer .footer-links ul a {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: white;
   display: inline-block;
   line-height: 1;
 }
 
 .footer .footer-links ul a:hover {
-  color: var(--accent-color);
+ font-weight: bold;
 }
 
 .footer .footer-contact p {
@@ -720,7 +721,10 @@ h6 {
   margin-top: 8px;
   font-size: 13px;
 }
-
+.container .credits a {
+  color: white;
+  font-weight: bold;
+}
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -1433,7 +1437,7 @@ section,
 # Faq Section
 --------------------------------------------------------------*/
 .faq .faq-container .faq-item {
-  background-color: var(--surface-color);
+  background-color: white;
   position: relative;
   padding: 20px;
   margin-bottom: 15px;
@@ -1528,6 +1532,9 @@ section,
 
 .faq-toggle {
   cursor: pointer;
+}
+#faq {
+  background-color: white;
 }
 
 /*--------------------------------------------------------------
