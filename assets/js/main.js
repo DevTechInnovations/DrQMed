@@ -159,6 +159,19 @@
       }
     }
   });
+  
+  /**
+   * FAQ
+   */
+  const faqItems = document.querySelectorAll('.faq-item');
+
+  faqItems.forEach(item => {
+    const toggle = item.querySelector('.faq-toggle');
+    
+    toggle.addEventListener('click', () => {
+      item.classList.toggle('open');
+    });
+  });
 
   /**
    * Navmenu Scrollspy
@@ -183,3 +196,5 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+
