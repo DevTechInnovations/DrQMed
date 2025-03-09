@@ -683,7 +683,9 @@
           </div>
 
           <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div id="contact-form">
+                <form id="" action="https://api.web3forms.com/submit" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="400">
+                <input type="hidden" name="access_key" value="8eecb199-3a47-4003-bf8a-31359882f147">
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -701,18 +703,40 @@
                 <div class="col-md-12">
                   <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
                 </div>
-
+<!-- 
                 <div class="col-md-12 text-center">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div> -->
 
-                  <button type="submit">Send Message</button>
+                  <input type="hidden" name="redirect" value="https://drqmed.co.za/">
+                  <div class="h-captcha" data-captcha="true"></div>
+
+                <button type="submit">Send Message</button>
                 </div>
 
               </div>
             </form>
           </div><!-- End Contact Form -->
+
+          <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+    // Add an event listener to the form submission
+    document.getElementById("contact-form").addEventListener("submit", function (event) {
+        // Prevent the default form submission
+        event.preventDefault();
+        // Trigger Swal.fire after form submission
+        Swal.fire({
+            title: "Success",
+            text: "Message sent successfully",
+            icon: "success"
+        }).then(() => {
+            // After the user acknowledges the Swal.fire message, submit the form
+            event.target.submit()
+        });
+    });
+</script>
 
         </div>
 
@@ -757,7 +781,7 @@
           </ul>
         </div>
 
->        <div class="col-lg-2 col-md-3 footer-links">
+        <div class="col-lg-2 col-md-3 footer-links">
           <h4>Our Services</h4>
           <ul>
             <li><a href="#mental-health">Mental Health Consultation</a></li>
@@ -791,7 +815,14 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">DrQMed</strong> <span>All Rights Reserved</span></p>
+
+
+      <p>Copyright ©<strong class="px-1 sitename">DrQMed. </strong><span id="year"></span> All rights reserved.</p>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+      <!-- <p>© <strong class="px-1 sitename">DrQMed</strong> <span>Copyright</span> <span>All Rights Reserved</span></p> -->
       <div class="credits">
         Powered by <a href="https://devtechinnovations.co.za/">DevTech Innovations</a>
       </div>
