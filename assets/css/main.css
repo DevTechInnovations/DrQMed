@@ -700,7 +700,7 @@ h6 {
 }
 
 .footer .footer-links ul a:hover {
- font-weight: bold;
+  font-weight: bold;
 }
 
 .footer .footer-contact p {
@@ -721,10 +721,30 @@ h6 {
   margin-top: 8px;
   font-size: 13px;
 }
+
 .container .credits a {
   color: white;
   font-weight: bold;
 }
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+  .footer h4 {
+    font-size: 14px; /* Adjust for smaller screens */
+  }
+
+  .footer .footer-links ul {
+    padding-left: 15px; /* Adjust padding */
+  }
+
+  .footer .social-links a {
+    width: 35px; /* Make social links smaller on smaller screens */
+    height: 35px;
+    font-size: 14px;
+  }
+}
+
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -1160,7 +1180,7 @@ section,
 .services .service-item h3 {
   font-weight: 700;
   margin: 10px 0 15px 0;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .services .service-item p {
