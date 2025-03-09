@@ -1108,6 +1108,9 @@ section,
   font-family: var(--heading-font);
   font-size: 16px;
 }
+.stats {
+  background-color: white; /* Set the background color of the entire section to white */
+}
 
 /*--------------------------------------------------------------
 # Services Section
