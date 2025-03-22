@@ -536,7 +536,21 @@ h6 {
     font-size: 12px;
   }
 }
+@media (max-width: 575px) {
+  .cta-btn {
+    display: inline-block !important; /* Ensure button is visible */
+    visibility: visible !important; /* Ensure it's not hidden */
+  }
+}
 
+@media (max-width: 300px) {
+  .cta-btn {
+    display: block !important; /* Force the button to be visible */
+    width: 100%; /* Make the button full-width to avoid overflow */
+    padding: 10px; /* Adjust padding for better touch interaction */
+    font-size: 14px; /* Reduce font size to make it fit */
+  }
+}
 }
 
 /*--------------------------------------------------------------
