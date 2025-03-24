@@ -529,16 +529,14 @@ h6 {
 /* Extra Small Screens (Fixes disappearance on 480px) */
 @media (max-width: 480px) {
   .cta-btn {
-    display: block;
-    width: fit-content; /* Prevents full width */
-    margin: 10px auto; /* Centers the button */
-    padding: 6px 12px;
-    font-size: 12px;
+    display: inline-block; /* Prevents full-width behavior */
+    text-align: center; /* Centers text */
+    max-width: 120px;
   }
 }
 @media (max-width: 575px) {
   .cta-btn {
-    display: inline-block !important; /* Ensure button is visible */
+    display: block !important; /* Ensure button is visible */
     visibility: visible !important; /* Ensure it's not hidden */
   }
 }
